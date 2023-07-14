@@ -8,6 +8,7 @@
   --body-bg-color: #22212c;
   --text-color: #837e9f;
   --bg-cards: #302f3d;
+  --bg-cards-hover: #3f3e50;
   --bg-techs: #cb92b1;
   --text-hover: #696488;
   --bg-techs-hover: #a36e8b;
@@ -99,7 +100,7 @@ aside {
 }
 
 #links ul li:hover {
-  background-color: #2b2b36;
+  background-color: var(--bg-cards-hover);
   border-radius: 8px;
 }
 
@@ -225,6 +226,12 @@ main {
 
   background-color: var(--bg-cards);
   color: var(--text-color);
+
+  cursor: pointer;
+}
+
+.list-projects:hover {
+  background-color: var(--bg-cards-hover);
 }
 
 .list-projects #folder {
@@ -297,6 +304,12 @@ main {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+
+  cursor: pointer;
+}
+
+#posts #post:hover {
+  background-color: var(--bg-cards-hover);
 }
 
 #posts #post img {
